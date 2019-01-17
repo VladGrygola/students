@@ -8,6 +8,12 @@ h1 {
     font-weight: 300;   
     text-align: center;
 }
+table {
+    width: 100%;
+}
+table, th, td {
+    text-align: center; 
+}
 footer {
     padding: 30px;
     text-align: center;

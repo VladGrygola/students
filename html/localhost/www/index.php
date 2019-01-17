@@ -10,6 +10,26 @@
     <div id = "back">
         <div id = "content">
             <h1>База даних студентів</h1>
+            <!-- This table will be replaced by PHP script -->
+            <table>
+                <tr>
+                    <th>id</th>
+                    <th>name</th>
+                    <th>surname</th>
+                    <th>sex</th>
+                    <th>age</th>
+                    <th>faculty</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Vlad</td>
+                    <td>Grygola</td>
+                    <td>male</td>
+                    <td>17</td>
+                    <td>Software Engineering</td>
+                </tr>
+            </table>
+            <!-- This table will be replaced by PHP script -->
         </div>
     </div>
     <footer>
