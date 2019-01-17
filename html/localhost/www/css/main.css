@@ -16,7 +16,7 @@ button {
 	letter-spacing: 1px;
 
 	outline: 0 !important;
-	border: solid 1px black;
+	border: solid 1px lightgray;
 	border-radius: 6px; 
 	background-color: white;
 }
