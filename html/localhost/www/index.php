@@ -10,12 +10,14 @@
     <div id = "back">
         <div id = "content">
             <h1>База даних студентів</h1>
+            <div style="text-align: center; margin-bottom: 20px">
+                <button>Додати запис</button>
+            </div>
             <!-- This table will be replaced by PHP script -->
             <table>
                 <tr>
                     <th>id</th>
-                    <th>name</th>
-                    <th>surname</th>
+                    <th colspan="2">name</th>
                     <th>sex</th>
                     <th>age</th>
                     <th>faculty</th>
