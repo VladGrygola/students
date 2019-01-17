@@ -9,6 +9,7 @@
 <body>
     <div id = "back">
         <div id = "content">
+            <h1>База даних студентів</h1>
         </div>
     </div>
     <footer>

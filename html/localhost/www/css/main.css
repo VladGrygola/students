@@ -1,8 +1,12 @@
 body {
     font-family: 'Montserrat', sans-serif;
-	font-size: 2em;
+	font-size: 1.5em;
 	margin: 0;
 	padding: 0;
+}
+h1 {
+    font-weight: 300;   
+    text-align: center;
 }
 footer {
     padding: 30px;
