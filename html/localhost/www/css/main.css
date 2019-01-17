@@ -10,7 +10,19 @@ footer {
 
     font-size: 0.75em;
     font-style: italic;
-    color: lightgray;
+    color: gray;
     
-    background-color: gray;
+    background-color: lightgray;
+}
+#back {
+    width: 100%;
+    position: relative;
+    background-color: white;
+}
+#content {
+    width: 960px;
+	height:  1000px;
+    margin: 0 auto;
+    
+    background-color: white;
 }

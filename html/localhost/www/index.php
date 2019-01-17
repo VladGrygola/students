@@ -7,6 +7,10 @@
     <link rel="stylesheet" type="text/css" href="css/main.css" />
 </head>
 <body>
+    <div id = "back">
+        <div id = "content">
+        </div>
+    </div>
     <footer>
         Made by Vlad Grygola
     </footer>
