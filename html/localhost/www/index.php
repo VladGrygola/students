@@ -11,8 +11,42 @@
         <div id = "content">
             <h1>База даних студентів</h1>
             <div style="text-align: center; margin-bottom: 20px">
-                <button>Додати запис</button>
+                <button id="add">Додати запис</button>
             </div>
+
+            <!-- This block will be hidden and will be shown only after  pressing the button-->
+            <div class="addFormDiv">
+                <form name="addForm" action="" method = "get">
+                    <div style="float: left; text-align:right; margin-right: 25px;">
+                        <p>Ім'я</p>
+                        <p>Фамілія</p>
+                        <p>Стать</p>
+                        <p>Вік</p>
+                        <p>Факультет</p>
+                    </div>    
+                    <div>
+                        <p><input type="text" name="name"/></p>
+                        <p><input type="text" name="surname"/></p>
+                        <p><input type="radio" name="sex" value="1"/><label>Чоловік</label>
+                           <input type="radio" name="sex" valud="0"/><label>Жінка</label>
+                        </p>
+                        <p><input type="number" name="age"/></p>
+                        <p>
+                            <select name = "faculty">
+                                <!-- This place will be replaced by PHP script-->
+                                <option>Software Engineering</option>
+                                <option>Biology</option>
+                                <!-- This place will be replaced by PHP script-->
+                            </select>
+                        </p>
+                    </div>       
+                    <div style="text-align: center;">
+                        <input id="btn" style = "width: 120px" type="submit" value="Додати"/>  
+                    </div>     
+                </form>
+            </div>
+            <!-- This block will be hidden and will be shown only after  pressing the button-->
+
             <!-- This table will be replaced by PHP script -->
             <table>
                 <tr>
