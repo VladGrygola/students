@@ -11,7 +11,9 @@
         <div id = "content">
             <h1>База даних студентів</h1>
             <div style="text-align: center; margin-bottom: 20px">
-                <button id="add">Додати запис</button>
+                <button id="add">Додати</button>
+                <button id="edit">Редагувати</button>
+                <button id="del">Видалити</button>
             </div>
 
             <!-- This block will be hidden and will be shown only after  pressing the button-->
@@ -41,7 +43,7 @@
                         </p>
                     </div>       
                     <div style="text-align: center;">
-                        <input id="btn" style = "width: 120px" type="submit" value="Додати"/>  
+                        <input id="btn" style = "width: 150px" type="submit" value="Додати запис"/>  
                     </div>     
                 </form>
             </div>
