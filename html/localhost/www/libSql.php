@@ -6,13 +6,13 @@
 			$mysqli = new mysqli("localhost", "root", "password_0", $db_name);
 			// Check connection
 			if ($mysqli->connect_errno) {
-			    printf("Connect failed: %s\n", $mysqli->connect_error);
+				echo "Connect failed: " . $mysqli->connect_error;
 			    exit();
 			}
 			$query = "SELECT * FROM " . $db_name . "." . $table_name;
 			// Display number of rows
 			if ($result = $mysqli->query($query)) {
-			    printf("Кількість записів: %d\n", $result->num_rows);
+				echo "Кількість записів: <span id='numRows'>" . $result->num_rows . "</span></br>";
 			}
 			return $result;
 		}
