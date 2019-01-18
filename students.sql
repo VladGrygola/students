@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: localhost
--- Время создания: Янв 17 2019 г., 16:58
+-- Время создания: Янв 18 2019 г., 13:27
 -- Версия сервера: 8.0.13
 -- Версия PHP: 7.3.1
 
@@ -54,7 +54,7 @@ CREATE TABLE `students` (
   `name` varchar(50) NOT NULL,
   `surname` varchar(50) NOT NULL,
   `male` tinyint(1) NOT NULL,
-  `age` tinyint(4) NOT NULL,
+  `birthday` date NOT NULL,
   `id_faculty` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -62,9 +62,9 @@ CREATE TABLE `students` (
 -- Дамп данных таблицы `students`
 --
 
-INSERT INTO `students` (`id`, `name`, `surname`, `male`, `age`, `id_faculty`) VALUES
-(1, 'Vladyslav', 'Grygola', 1, 17, 1),
-(2, 'Kate', 'Smith', 0, 18, 2);
+INSERT INTO `students` (`id`, `name`, `surname`, `male`, `birthday`, `id_faculty`) VALUES
+(1, 'Vladyslav', 'Grygola', 1, '2001-10-11', 1),
+(2, 'Kate', 'Smith', 0, '2001-11-10', 2);
 
 --
 -- Индексы сохранённых таблиц

@@ -23,7 +23,7 @@
                         <p>Ім'я</p>
                         <p>Фамілія</p>
                         <p>Стать</p>
-                        <p>Вік</p>
+                        <p>Дата народження</p>
                         <p>Факультет</p>
                     </div>    
                     <div>
@@ -32,7 +32,7 @@
                         <p><input type="radio" name="sex" value="1"/><label>Чоловік</label>
                            <input type="radio" name="sex" valud="0"/><label>Жінка</label>
                         </p>
-                        <p><input type="number" name="age"/></p>
+                        <p><input type="date" name="age"/></p>
                         <p>
                             <select name = "faculty">
                                 <!-- This place will be replaced by PHP script-->
