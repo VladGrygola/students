@@ -48,26 +48,11 @@
                 </form>
             </div>
             <!-- This block will be hidden and will be shown only after  pressing the button-->
-
-            <!-- This table will be replaced by PHP script -->
-            <table>
-                <tr>
-                    <th>id</th>
-                    <th colspan="2">name</th>
-                    <th>sex</th>
-                    <th>age</th>
-                    <th>faculty</th>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>Vlad</td>
-                    <td>Grygola</td>
-                    <td>male</td>
-                    <td>17</td>
-                    <td>Software Engineering</td>
-                </tr>
-            </table>
-            <!-- This table will be replaced by PHP script -->
+            <?php 
+                require_once "libSql.php";
+                $table = Table::getTable("students");
+                Table::showTable($table);
+            ?>
         </div>
     </div>
     <footer>
