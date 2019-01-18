@@ -37,7 +37,12 @@ input {
     padding: 0;
 }
 table {
-    width: 100%;
+    width: 98%;
+    float: right;
+}
+#checkboxToTable {
+    width: 2%;
+    float: left;
 }
 table, th, td {
     text-align: center; 
