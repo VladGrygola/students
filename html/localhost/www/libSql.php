@@ -12,7 +12,7 @@
 			$query = "SELECT * FROM " . $db_name . "." . $table_name;
 			// Display number of rows
 			if ($result = $mysqli->query($query)) {
-				echo "Кількість записів: <span id='numRows'>" . $result->num_rows . "</span></br>";
+				echo "<p>Кількість записів: <span id='numRows'>" . $result->num_rows . "</span></p>";
 			}
 			return $result;
 		}
