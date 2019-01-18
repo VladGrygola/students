@@ -14,8 +14,8 @@ $("#btn").click(function(){
     }
 });
 // Add checkboxes to table
-var numRows = parseInt(document.getElementById('numRows').innerHTML);
+var numRows = parseInt(document.getElementById('rowNumbers').innerHTML);
 for(var i = 1; i <= numRows; i++) {
-    var add = "<input style='margin:9px' type='checkbox' value='" + i + "'/>"
+    var add = "<input style='margin:9px' type='checkbox' value='" + i + "'/>";
     $("#checkboxToTable").append(add);
 }

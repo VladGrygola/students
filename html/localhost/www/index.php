@@ -50,9 +50,8 @@
             <!-- This block will be hidden and will be shown only after  pressing the button-->
             
             <?php 
-                require_once "libSql.php";
-                $table = Table::getTable("students");
-                Table::showTable($table);
+                require_once "libmvc.php";
+                Control::build("students");
             ?>
             
             <div style="display:block" id="checkboxToTable">
