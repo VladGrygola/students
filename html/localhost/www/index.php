@@ -35,10 +35,10 @@
                         <p><input type="date" name="age"/></p>
                         <p>
                             <select name = "faculty">
-                                <!-- This place will be replaced by PHP script-->
-                                <option>Software Engineering</option>
-                                <option>Biology</option>
-                                <!-- This place will be replaced by PHP script-->
+                                <?php 
+                                    require_once "libmvc.php";
+                                    Control::buildOptions("faculty", "name_faculty");
+                                ?>
                             </select>
                         </p>
                     </div>       

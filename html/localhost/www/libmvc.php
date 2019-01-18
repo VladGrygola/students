@@ -29,11 +29,27 @@
 			}
 			echo "</table>";
 		}
+		static public function generateOptionsFromCol($table, $col)
+		{
+			while($row = $table->fetch_assoc()) {
+		        foreach ($row as $key => $value) {
+		        	if ($key == $col) {
+		        		echo "<option>" . $value . "</option>";
+		        	}
+		        		
+		        }
+			}
+		}
 	}
 	class Control {
 		static public function build($table) {
 			$t = Model::getTable($table);
 			View::generateTable($t);
+		}
+		static public function buildOptions($table, $col)
+		{
+			$t = Model::getTable($table);
+			View::generateOptionsFromCol($t, $col);
 		}
 	}
 	class Model {
