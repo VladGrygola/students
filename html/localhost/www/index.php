@@ -30,7 +30,7 @@
                         <p><input type="text" name="name"/></p>
                         <p><input type="text" name="surname"/></p>
                         <p><input type="radio" name="sex" value="1"/><label>Чоловік</label>
-                           <input type="radio" name="sex" valud="0"/><label>Жінка</label>
+                           <input type="radio" name="sex" value="0"/><label>Жінка</label>
                         </p>
                         <p><input type="date" name="birthday"/></p>
                         <p>
