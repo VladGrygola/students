@@ -31,13 +31,13 @@
 		}
 		static public function generateOptionsFromCol($table, $col)
 		{
-			$i = 0;
+			$i = 1;
 			while($row = $table->fetch_assoc()) {
 		        foreach ($row as $key => $value) {
 		        	if ($key == $col) {
 		        		echo "<option value=' " . $i . "'>" . $value . "</option>";
-		        	}
-		        		
+		        		$i++;
+		        	}	
 		        }
 			}
 		}
