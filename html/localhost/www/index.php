@@ -18,7 +18,7 @@
 
             <!-- This block will be hidden and will be shown only after  pressing the button-->
             <div class="addFormDiv">
-                <form name="addForm" action="" method = "get">
+                <form name="addForm" action="add.php" method = "post">
                     <div style="float: left; text-align:right; margin-right: 25px;">
                         <p>Ім'я</p>
                         <p>Фамілія</p>
@@ -32,9 +32,9 @@
                         <p><input type="radio" name="sex" value="1"/><label>Чоловік</label>
                            <input type="radio" name="sex" valud="0"/><label>Жінка</label>
                         </p>
-                        <p><input type="date" name="age"/></p>
+                        <p><input type="date" name="birthday"/></p>
                         <p>
-                            <select name = "faculty">
+                            <select name = "id_faculty">
                                 <?php 
                                     require_once "libmvc.php";
                                     Control::buildOptions("faculty", "name_faculty");
