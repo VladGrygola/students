@@ -12,13 +12,11 @@
             <h1>База даних студентів</h1>
             <div style="text-align: center; margin-bottom: 20px">
                 <button id="add">Додати</button>
-                <button id="edit">Редагувати</button>
-                <button id="del">Видалити</button>
             </div>
 
             <!-- This block will be hidden and will be shown only after  pressing the button-->
             <div class="addFormDiv">
-                <form name="addForm" action="add.php" method = "post">
+                <form style="padding:50px" name="addForm" action="add.php" method = "post">
                     <div style="float: left; text-align:right; margin-right: 25px;">
                         <p>Ім'я</p>
                         <p>Фамілія</p>
@@ -53,10 +51,15 @@
                 require_once "libmvc.php";
                 Control::build("students");
             ?>
-            
-            <div style="display:block" id="checkboxToTable">
-                <br/>
-            </div>
+            <form name="del_editForm" action="del_edit.php" method = "post">
+                <div style="display:block" id="checkboxToTable">
+                    <br/>
+                </div>
+                <div style="text-align: center; margin-bottom: 20px">
+                     <button type="submit" name="button" value="del">Видалити</button>
+                     <button type="submit" name="button" value="edit">Редагувати</button>
+                </div>
+            </form>
         </div>
     </div>
     <footer>
